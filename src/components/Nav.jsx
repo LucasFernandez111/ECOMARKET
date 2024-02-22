@@ -2,6 +2,7 @@ import React from "react";
 import { LuShoppingBasket } from "react-icons/lu";
 import SearchInput from "./SearchInput";
 import logoEcomarket from "../assets/ECOMARKET.png";
+import userProfile from "../assets/user.png";
 
 const Nav = () => {
   return (
@@ -15,9 +16,18 @@ const Nav = () => {
 
         <SearchInput />
 
-        <div class="flex  md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse text-center text-white gap-2 content-center justify-center text-xl  font-semibold">
-          <LuShoppingBasket size={40} color="white" />
-          <span className="pt-2">$2000</span>
+        <div class="flex  md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse text-center text-white gap-9 items-center justify-center text-xl  font-semibold">
+          <div className="flex gap-2  ">
+            <LuShoppingBasket size={40} color="white" />
+            <span className="pt-2">$2000</span>
+          </div>
+          <div>
+            <img
+              class="w-10 h-10 p-1 rounded-full ring-2 ring-gray-300 hover:scale-125 duration-75 dark:ring-gray-500"
+              src={userProfile}
+              alt="Bordered avatar"
+            />
+          </div>
         </div>
       </div>
     </nav>

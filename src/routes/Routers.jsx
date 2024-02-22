@@ -7,7 +7,7 @@ import ListSections from "../components/ListSections";
 const Routers = () => {
   return (
     <Routes>
-      <Route path="/home" element={<Home />} />
+      <Route path="/" element={<Home />} />
       <Route path="/Example" element={<ListSections />} />
     </Routes>
   );
