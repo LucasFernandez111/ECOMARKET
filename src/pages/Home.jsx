@@ -3,7 +3,7 @@ import Nav from "../components/Nav";
 import ListSections from "../components/ListSections";
 import { BiSolidLeaf as IconLeaf } from "react-icons/bi";
 import ScrollCard from "../components/ScrollCard";
-import oferta from "../assets/inaguracion.png"
+import oferta from "../assets/inaguracion.png";
 
 const Home = () => {
   return (
@@ -17,8 +17,10 @@ const Home = () => {
           <ListSections />
         </aside>
         <article className="flex flex-col items-center justify-center w-screen h-screen">
-        
-          <img src={oferta} className=" flex gap-2 ml-38 mt-48 h-72 w-9/12 " />
+          <img
+            src={oferta}
+            className=" flex gap-2 ml-38 mt-48 h-72 object-cover rounded-lg w-9/12 "
+          />
           <div>
             <ScrollCard />
           </div>
