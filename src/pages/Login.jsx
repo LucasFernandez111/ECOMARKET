@@ -1,10 +1,15 @@
 import React from "react";
 import ecoLogo from "../assets/ECOMARKET.png";
+import fondoo from "../assets/fondoMarket.png";
 
 const Login = () => {
   return (
-    <div class="bg-purple-900 absolute top-0 left-0 bg-gradient-to-b from-lime-600 via-lime-500  to-lime-300 bottom-0 leading-5 flex items-center justify-center h-full w-full overflow-hidden">
-      <div class="p-12 bg-white mx-auto rounded-3xl w-96 drop-shadow-2xl ">
+    <div>
+       <img src={fondoo} className="absolute top-0 left-0 bottom-0 leading-5 flex items-center justify-center h-full w-full overflow-hidden"/>
+    
+    <div class=" absolute top-0 left-0 bottom-0 leading-5 flex items-center justify-center h-full w-full overflow-hidden">
+    
+      <div class="p-12 bg-lime-50 mx-auto rounded-3xl w-96 drop-shadow-2xl ">
         <div class="mb-7 flex justify-center items-center">
           <img
             src={ecoLogo}
@@ -31,7 +36,7 @@ const Login = () => {
 
           <div class="relative">
             <input
-              placeholder="Password"
+              placeholder="Contraseña"
               class="text-sm text-gray-200 px-4 py-3 rounded-lg w-full bg-gray-200 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-purple-400"
             />
             <div class="flex items-center absolute inset-y-0 right-0 mr-3  text-sm leading-5"></div>
@@ -39,7 +44,7 @@ const Login = () => {
 
           <div class="flex items-center justify-between">
             <div class="text-sm ml-auto">
-              <a href="#" class="text-purple-700 hover:text-purple-600">
+              <a href="#" class="text-orange-700 hover:text-orange-600">
                 ¿Olvidaste tu contraseña?
               </a>
             </div>
@@ -47,7 +52,7 @@ const Login = () => {
           <div>
             <button
               type="submit"
-              class="w-full flex justify-center bg-purple-800  hover:bg-purple-700 text-gray-100 p-3  rounded-lg tracking-wide font-semibold  cursor-pointer transition ease-in duration-500"
+              class="w-full flex justify-center bg-orange-500  hover:bg-orange-700 text-gray-100 p-3  rounded-lg tracking-wide font-semibold  cursor-pointer transition ease-in duration-500"
             >
               Sign in
             </button>
@@ -97,19 +102,20 @@ const Login = () => {
         </div>
         <div class="mt-7 text-center text-gray-300 text-xs">
           <span>
-            Copyright © 2021-2023
+            Copyright © 2024
             <a
               href="https://codepen.io/uidesignhub"
               rel=""
               target="_blank"
               title="Codepen aji"
-              class="text-purple-500 hover:text-purple-600 "
+              class=" ml-3 text-orange-700 hover:text-orange-600 "
             >
-              AJI
+              Términos y Condiciones
             </a>
           </span>
         </div>
       </div>
+    </div>
     </div>
   );
 };

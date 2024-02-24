@@ -6,7 +6,7 @@ import ScrollCard from "../components/ScrollCard";
 
 const Home = () => {
   return (
-    <div className=" bg-lime-200 w-screen h-screen ">
+    <div className=" bg-lime-50 w-screen h-screen ">
       <header>
         <Nav />
       </header>
