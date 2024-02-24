@@ -4,15 +4,20 @@ import ecoLogo from "../assets/ECOMARKET.png";
 const Login = () => {
   return (
     <div class="bg-purple-900 absolute top-0 left-0 bg-gradient-to-b from-lime-600 via-lime-500  to-lime-300 bottom-0 leading-5 flex items-center justify-center h-full w-full overflow-hidden">
-      <div class="p-12 bg-white mx-auto rounded-3xl w-96 ">
-        <div class="mb-7">
-          <h3 class="font-semibold text-2xl text-gray-800">Sign In </h3>
+      <div class="p-12 bg-white mx-auto rounded-3xl w-96 drop-shadow-2xl ">
+        <div class="mb-7 flex justify-center items-center">
+          <img
+            src={ecoLogo}
+            className="object-cover w-36 h-28 "
+            alt="logo-ecomarket"
+          />
+          {/* <h3 class="font-semibold text-2xl text-gray-800">Sign In </h3>
           <p class="text-gray-400">
-            Don'thave an account?{" "}
+            Don'thave an account?
             <a href="#" class="text-sm text-purple-700 hover:text-purple-700">
               Sign Up
             </a>
-          </p>
+          </p> */}
         </div>
 
         <div class="space-y-6">
@@ -35,7 +40,7 @@ const Login = () => {
           <div class="flex items-center justify-between">
             <div class="text-sm ml-auto">
               <a href="#" class="text-purple-700 hover:text-purple-600">
-                Forgot your password?
+                ¿Olvidaste tu contraseña?
               </a>
             </div>
           </div>
