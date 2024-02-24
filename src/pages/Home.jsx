@@ -3,25 +3,22 @@ import Nav from "../components/Nav";
 import ListSections from "../components/ListSections";
 import { BiSolidLeaf as IconLeaf } from "react-icons/bi";
 import ScrollCard from "../components/ScrollCard";
+import oferta from "../assets/inaguracion.png"
 
 const Home = () => {
   return (
     <div className=" bg-lime-50 w-screen h-screen ">
-      <header>
+      <header className="mb-24 sticky">
         <Nav />
       </header>
 
       <main className="flex flex-row">
-        <aside>
+        <aside className="mr-44 sticky">
           <ListSections />
         </aside>
         <article className="flex flex-col items-center justify-center w-screen h-screen">
-          <h1 className=" font-medium text-lime-800 text-2xl flex gap-2  ">
-            "Cambia al verde con EcoMarket! Tu destino eco-friendly para un
-            mundo más saludable y sostenible."
-            {<IconLeaf size={40} />}
-          </h1>
-
+        
+          <img src={oferta} className=" flex gap-2 ml-38 mt-48 h-72 w-9/12 " />
           <div>
             <ScrollCard />
           </div>
