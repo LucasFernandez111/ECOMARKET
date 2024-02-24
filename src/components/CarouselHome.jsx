@@ -1,26 +1,60 @@
-import React from "react";
-import ScrollCard from "../components/ScrollCard";
-'use client';
+import React, { useRef } from "react";
+import { useState } from "react";
 
+const corousel = [1, 2, 3, 4, 2, 3, 4, 5];
 
+const ITEM_WIDTH = 300;
 
+const CarouselHome = () => {
+  const [scrollPosition, setScrollPosition] = useState(0);
 
-import { Carousel } from 'flowbite-react';
+  const containerRef = useRef();
 
- export default function Component() {
+  const handleScroll = (scrollAmount) => {
+    const newScrollPosition = scrollPosition + scrollAmount;
+
+    setScrollPosition(newScrollPosition);
+
+    console.log(containerRef.current.scrollRigth);
+
+    containerRef.current.scrollLeft = newScrollPosition;
+  };
   return (
-    <div className="h-96 w-46 pt-4  ">
-      <Carousel>
-        <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
-          <ScrollCard></ScrollCard>
+    <div className="flex gap-4 flex-col justify-center items-center w-screen h-screen">
+      <div
+        ref={containerRef}
+        style={{
+          width: "900px",
+          overflowX: "scroll",
+          scrollBehavior: "smooth",
+        }}
+      >
+        <div className="flex gap-4 items-center justify-center  w-[1000px]">
+          {corousel.map((item) => {
+            return (
+              <div className="h-32 w-[300px] bg-gray-600 text-white">
+                {item}
+              </div>
+            );
+          })}
         </div>
-        <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
-          Slide 2
-        </div>
-        <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
-          Slide 3
-        </div>
-      </Carousel>
+      </div>
+      <div className="flex gap-5">
+        <button
+          onClick={() => handleScroll(-ITEM_WIDTH)}
+          className="bg-gray-500"
+        >
+          left
+        </button>
+        <button
+          onClick={() => handleScroll(ITEM_WIDTH)}
+          className="bg-gray-500"
+        >
+          right
+        </button>
+      </div>
     </div>
   );
-}
+};
+
+export default CarouselHome;
