@@ -7,13 +7,13 @@ import oferta from "../assets/inaguracion.png";
 
 const Home = () => {
   return (
-    <div className=" bg-lime-50 w-screen h-screen ">
-      <header className="mb-24 sticky">
+    <div className=" bg-lime-50 w-screen   h-screen ">
+      <header className="mb-24 sticky shadow-2xl z-50 rounded-xl ">
         <Nav />
       </header>
 
       <main className="flex flex-row">
-        <aside className="mr-44 sticky">
+        <aside className="mr-44 sticky z-20 ">
           <ListSections />
         </aside>
         <article className="flex flex-col items-center justify-center w-screen h-screen">

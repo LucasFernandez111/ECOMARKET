@@ -6,7 +6,7 @@ import userProfile from "../assets/user.png";
 
 const Nav = () => {
   return (
-    <nav className="bg-lime-600 fixed w-full z-20 top-0 start-0 border-b border-gray-200 ">
+    <nav className="bg-lime-600 fixed w-full shadow-md rounded-lg  z-50  top-0 start-0 border-b border-gray-200 ">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <img
           src={logoEcomarket}
