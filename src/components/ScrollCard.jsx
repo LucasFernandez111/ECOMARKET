@@ -14,13 +14,15 @@ const ScrollCard = () => {
     },
     {
       id: 1,
-      name: "CocaCola ZERO 500ML",
+      name: "Gaseosa Cunnington sabor Suave 1.5L",
       href: "#",
       imageSrc:
-        "https://www.coca-cola.com/content/dam/onexp/ar/es/coca-cola/coca-cola-zero-v1.jpeg",
+        "https://carrefourar.vtexassets.com/arquivos/ids/359527/7790639003819_E02.jpg?v=638258156831630000",
       imageAlt: "Front of men's Basic Tee in black.",
-      price: "$35",
+      price: "$100",
     },
+    
+   ,
     // More products...
   ];
 

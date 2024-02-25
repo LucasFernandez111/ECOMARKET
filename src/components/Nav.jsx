@@ -16,9 +16,9 @@ const Nav = () => {
 
         <SearchInput />
 
-        <div class="flex  md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse text-center text-white gap-9 items-center justify-center text-xl  font-semibold">
-          <div className="flex gap-2  ">
-            <LuShoppingBasket size={40} color="white" />
+        <div class="flex  md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse text-center text-orange-700 gap-9 items-center justify-center text-xl  font-semibold">
+          <div className="flex gap-2 ">
+            <LuShoppingBasket size={40} color="white" className="hover:scale-105 cursor-pointer"/>
             <span className="pt-2">$2000</span>
           </div>
           <div>
