@@ -4,6 +4,7 @@ import Home from "../pages/Home";
 import ListSections from "../components/ListSections";
 import CarouselHome from "../components/CarouselHome";
 import Login from "../pages/Login";
+import Register from "../pages/Register";
 
 const Routers = () => {
   return (
@@ -12,6 +13,7 @@ const Routers = () => {
       <Route path="/Example" element={<ListSections />} />
       <Route path="/prueba" element={<CarouselHome />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/register" element={<Register />} />
     </Routes>
   );
 };
