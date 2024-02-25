@@ -18,13 +18,13 @@ const Login = () => {
               className="object-cover w-36 h-28 "
               alt="logo-ecomarket"
             />
-            <h3 class="font-semibold text-2xl text-gray-800">Registrate! </h3>
+            {/* <h3 class="font-semibold text-2xl text-gray-800">Registrate! </h3>
             <p class="text-gray-400">
               Don'thave an account?
               <a href="#" class="text-sm text-purple-700 hover:text-purple-700">
                 Sign Up
               </a>
-            </p>
+            </p> */}
           </div>
 
           <div class="space-y-6">
