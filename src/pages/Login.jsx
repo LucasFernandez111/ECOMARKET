@@ -1,13 +1,13 @@
 import React from "react";
 import ecoLogo from "../assets/ECOMARKET.png";
-import fondoo from "../assets/fondoMarket.png";
+import backGround from "../assets/fondoMarket.png";
 
 const Login = () => {
   return (
     <div>
       <img
-        src={fondoo}
-        className="absolute top-0 left-0 bottom-0 leading-5 flex items-center justify-center h-full w-full overflow-hidden"
+        src={backGround}
+        className="absolute object-cover top-0 left-0 bottom-0 leading-5 flex items-center justify-center h-full w-full overflow-hidden"
       />
 
       <div className=" absolute top-0 left-0 bottom-0 leading-5 flex items-center justify-center h-full w-full overflow-hidden">
@@ -18,13 +18,13 @@ const Login = () => {
               className="object-cover w-36 h-28 "
               alt="logo-ecomarket"
             />
-            {/* <h3 class="font-semibold text-2xl text-gray-800">Sign In </h3>
-          <p class="text-gray-400">
-            Don'thave an account?
-            <a href="#" class="text-sm text-purple-700 hover:text-purple-700">
-              Sign Up
-            </a>
-          </p> */}
+            <h3 class="font-semibold text-2xl text-gray-800">Registrate! </h3>
+            <p class="text-gray-400">
+              Don'thave an account?
+              <a href="#" class="text-sm text-purple-700 hover:text-purple-700">
+                Sign Up
+              </a>
+            </p>
           </div>
 
           <div class="space-y-6">
@@ -41,7 +41,6 @@ const Login = () => {
                 placeholder="Contraseña"
                 class="text-sm text-gray-200 px-4 py-3 rounded-lg w-full bg-gray-200 focus:bg-gray-100 border border-gray-200 focus:outline-none focus:border-purple-400"
               />
-              <div class="flex items-center absolute inset-y-0 right-0 mr-3  text-sm leading-5"></div>
             </div>
 
             <div class="flex items-center justify-between">
