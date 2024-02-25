@@ -6,8 +6,8 @@ import userProfile from "../assets/user.png";
 
 const Nav = () => {
   return (
-    <nav class="bg-lime-600 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
-      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+    <nav className="bg-lime-600 fixed w-full shadow-md rounded-lg  z-50  top-0 start-0 border-b border-gray-200 ">
+      <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <img
           src={logoEcomarket}
           className="absolute w-32"
@@ -23,7 +23,7 @@ const Nav = () => {
           </div>
           <div>
             <img
-              class="w-10 h-10 p-1 rounded-full ring-2 ring-gray-300 hover:scale-125 duration-75 dark:ring-gray-500"
+              className="w-10 h-10 p-1 rounded-full ring-2 ring-gray-300 hover:scale-125 duration-75"
               src={userProfile}
               alt="Bordered avatar"
             />
